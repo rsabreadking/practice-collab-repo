@@ -1,8 +1,8 @@
 - Hate on Gingers.
 - Have fun!
 
-- hate on Gingers that play poker a little extra.
+- hate on Gingers that play pokera hell of a lot.
 
-- Beer is brilliant
+- Beer is brilliant but only when I dont throw up, it make my  tummy hurt
 
 - NEVER let a gigner into your house
