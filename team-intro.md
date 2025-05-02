@@ -6,4 +6,6 @@
 
 ---
 
-Add your name + fun fact below! One person per line/section.
+## Example:
+- **Name**: Name
+- **Fun Fact**: I have never used git despite owning a server.
