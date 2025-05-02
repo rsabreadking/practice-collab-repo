@@ -6,4 +6,6 @@
 
 ---
 
+- **Name**: Kade
+- **Fun Fact**: I am a ginger. I am not liked by many people.
 Add your name + fun fact below! One person per line/section.
