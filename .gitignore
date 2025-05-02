@@ -1,0 +1,10 @@
+#This is optional. .gitignore will ignore unnessary systrem files and folders 
+#that do not need to be part of our projects in github 
+#for example:
+
+# Ignore macOS/system files
+.DS_Store
+
+# Node or Python projects (if we get there later)
+node_modules/
+venv/
