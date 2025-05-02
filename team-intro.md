@@ -9,4 +9,4 @@
 Add your name + fun fact below! One person per line/section.
 
 - **Name**: Ryan
-- **Fun Fact**: Nothing is fun. Life in pain.
+- **Fun Fact**: Nothing is fun. Life is pain.
