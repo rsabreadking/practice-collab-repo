@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AnonymousCounsellor" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.AnonymousCounsellor" parent="Base.Theme.AnonymousCounsellor" />
+
+    <style name="customCheckBox" parent="Theme.MaterialComponents.Light">
+        <item name="colorControlActivated">@color/darkGreen</item>
+    </style>
+    <style name="customEditBox" parent="Theme.MaterialComponents.Light">
+        <item name="hintTextColor">@color/lightGrey</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="height">48dp</item>
+    </style>
+</resources>

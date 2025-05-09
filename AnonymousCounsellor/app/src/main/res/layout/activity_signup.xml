@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/offWhite"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="120dp"/>
+
+    <!-- role selection -->
+    <CheckBox
+        android:id="@+id/counsellor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a counsellor"
+        android:checked="true"
+        android:theme="@style/customCheckBox"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- <RadioGroup
+        android:id="@+id/roleSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/userFields"
+        android:layout_centerInParent="true"
+        android:paddingLeft="60dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/userOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:buttonTint="@color/lightGreen"
+            android:paddingRight="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/counsellorOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counsellor"
+            android:buttonTint="@color/lightGreen"/>
+    </RadioGroup> -->
+
+    <!-- user fields -->
+    <LinearLayout
+        android:id="@+id/userFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <EditText
+            android:id="@+id/uEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="Username"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/uPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:hintEnabled="false"
+            app:endIconMode="password_toggle"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/uPasswordInput"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/customEditBox"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@android:drawable/editbox_background"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/dobInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="Date of Birth (Optional)"
+            android:inputType="date"
+            android:background="@android:drawable/editbox_background" />
+    </LinearLayout>
+
+    <!-- counsellor fields -->
+    <RelativeLayout
+        android:id="@+id/counsellorFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <EditText
+            android:id="@+id/cEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="First Name"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/surnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="Surname"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/cPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/idNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="ID Number"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/cellNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/customEditBox"
+            android:hint="Cell Number"
+            android:inputType="phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:drawable/editbox_background" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        android:backgroundTint="@color/lightGreen"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/noAccountMessage"
+            android:text="Already have an account?"
+            android:textSize="11sp"
+            android:textColor="@color/charcoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/Login"
+            android:text="Login"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@color/accentBlue"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="-20dp"
+            android:onClick="LoginClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>
