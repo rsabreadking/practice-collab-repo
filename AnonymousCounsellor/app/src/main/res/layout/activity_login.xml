@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/offWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:id="@+id/main"
+    >
+
+    <!-- app "logo" -->
+    <TextView
+        android:text="Safe"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkGreen"
+        android:layout_marginBottom="-35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/text2"/>
+    <TextView
+        android:id="@+id/text2"
+        android:text="Space"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkGreen"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/emailUsername"/>
+
+    <!-- login fields -->
+    <EditText
+        android:id="@+id/emailUsername"
+        android:theme="@style/customEditBox"
+        android:hint="Email/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_centerVertical="true"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/password"
+        android:theme="@style/customEditBox"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailUsername"/>
+    <Button
+        android:id="@+id/login"
+        android:text="Login"
+        android:backgroundTint="@color/lightGreen"
+        android:textColor="@color/offWhite"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/forgotPassword"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/forgotPassword"
+        android:text="Forgot password?"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@color/accentBlue"
+        android:textSize="11sp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/password"
+        android:layout_height="wrap_content"
+        android:gravity="end" />
+
+    <!-- signup instead -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/noAccountMessage"
+            android:text="Don't have an account?"
+            android:textSize="11sp"
+            android:textColor="@color/charcoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/signUp"
+            android:text="Sign Up"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@color/accentBlue"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="-20dp"
+            android:onClick="SignupClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
